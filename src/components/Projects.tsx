@@ -9,6 +9,8 @@ const LANGUAGE_COLORS: Record<string, string> = {
   Go: '#00add8',
   Rust: '#dea584',
   Shell: '#89e051',
+  Zig: '#e35a2a',
+  Swift: '#f05138',
 }
 
 export function Projects() {

@@ -41,3 +41,4 @@ jobs:
           projectName: alan
           directory: dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          wranglerVersion: 3

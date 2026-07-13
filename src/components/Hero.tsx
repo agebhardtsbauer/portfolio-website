@@ -135,6 +135,50 @@ export function Hero() {
           >
             Get in Touch
           </a>
+          <a
+            href="/resume.pdf"
+            download="Resume_AlanGeb_SDET.pdf"
+            className="btn-chamfer"
+            style={{
+              fontFamily: "'DM Mono', monospace",
+              fontSize: 12,
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              textDecoration: 'none',
+              padding: '14px 28px',
+              background: 'transparent',
+              color: 'var(--text)',
+              border: '1px solid var(--border-hover)',
+              transition: 'border-color 0.2s, color 0.2s',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 8,
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = 'var(--accent)'
+              e.currentTarget.style.color = 'var(--accent)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'var(--border-hover)'
+              e.currentTarget.style.color = 'var(--text)'
+            }}
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 3v12" />
+              <path d="M7 10l5 5 5-5" />
+              <path d="M5 21h14" />
+            </svg>
+            Resume
+          </a>
         </div>
       </div>
     </section>
