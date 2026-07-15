@@ -13,18 +13,6 @@ export function Experience() {
     >
       <div ref={headingRef} className="fade-in" style={{ marginBottom: 48 }}>
         <SectionLabel text="Work Experience" />
-        <h2
-          style={{
-            fontFamily: "'Space Grotesk', sans-serif",
-            fontWeight: 800,
-            fontSize: 36,
-            color: 'var(--text)',
-            margin: 0,
-            letterSpacing: '-0.02em',
-          }}
-        >
-          Where I've worked
-        </h2>
       </div>
 
       {/* Timeline */}

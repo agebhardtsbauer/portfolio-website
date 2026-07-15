@@ -12,18 +12,6 @@ export function Skills() {
     >
       <div ref={headingRef} className="fade-in" style={{ marginBottom: 48 }}>
         <SectionLabel text="Skills & Stack" />
-        <h2
-          style={{
-            fontFamily: "'Space Grotesk', sans-serif",
-            fontWeight: 800,
-            fontSize: 36,
-            color: 'var(--text)',
-            margin: 0,
-            letterSpacing: '-0.02em',
-          }}
-        >
-          Tools I reach for
-        </h2>
       </div>
 
       <div

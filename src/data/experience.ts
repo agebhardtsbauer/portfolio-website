@@ -20,7 +20,7 @@ export const experience: ExperienceEntry[] = [
       'Automated testing of complex call center flows across Genesys, DynamoDB, CloudWatch, S3, and Snowflake; implemented visual testing and WCAG/AXE accessibility scanning',
       'Led and mentored teams of test automators across projects touching every layer of the web stack; hosted brown-bags to drive shift-left adoption',
     ],
-    tags: ['Playwright', 'TypeScript', 'React', 'AWS', 'Agentic / MCP', 'GitLab CI'],
+    tags: ['TypeScript', 'Playwright', 'Cypress', 'GitLab CI', 'React', 'SQL', 'Agentic / MCP', 'AWS'],
   },
   {
     role: 'Software Development Engineer in Test',

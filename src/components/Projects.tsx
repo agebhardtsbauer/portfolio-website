@@ -22,28 +22,14 @@ export function Projects() {
       style={{ padding: '120px 48px', maxWidth: 900, margin: '0 auto' }}
     >
       <div ref={headingRef} className="fade-in" style={{ marginBottom: 48 }}>
-        <SectionLabel text="Selected Work" />
-        <h2
-          style={{
-            fontFamily: "'Space Grotesk', sans-serif",
-            fontWeight: 800,
-            fontSize: 36,
-            color: 'var(--text)',
-            margin: 0,
-            letterSpacing: '-0.02em',
-          }}
-        >
-          Things I've built
-        </h2>
+        <SectionLabel text="Projects" />
       </div>
 
       <div
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-          gap: 1,
-          background: 'var(--border)',
-          border: '1px solid var(--border)',
+          gap: 2,
         }}
       >
         {projects.map((project, i) => (
@@ -70,6 +56,7 @@ function ProjectCard({
       className="fade-in"
       style={{
         background: 'var(--bg2)',
+        border: '1px solid var(--border)',
         padding: '24px',
         display: 'flex',
         flexDirection: 'column',
