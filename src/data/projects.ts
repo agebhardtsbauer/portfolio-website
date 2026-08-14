@@ -30,7 +30,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Mousehole',
-    description: 'Accessibility tool for the Hyprland window server that replaces mouse usage with Mouse Query Language, a text language for locating and acting on on-screen elements.',
+    description: `Accessibility tool for the Hyprland window server that replaces mouse usage with "Mouse Query Language" (MQL), a query language I'm developing for locating and acting on on-screen elements.`,
     url: 'https://github.com/agebhardtsbauer/mousehole',
     language: 'Zig',
     stars: 0,
@@ -58,7 +58,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Jump',
-    description: "Native macOS accessibility tool for keyboard-driven mouse movement, built on macOS's accessibility tree.",
+    description: "Native macOS accessibility tool for keyboard-driven mouse movement, built on macOS' accessibility tree.",
     url: 'https://github.com/agebhardtsbauer/jump',
     language: 'Swift',
     stars: 0,
