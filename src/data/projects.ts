@@ -65,14 +65,14 @@ export const projects: Project[] = [
   },
   {
     name: 'organ-eyes',
-    description: 'CLI that assembles modular markdown fragments into a single context document by recursively resolving [[FragmentName]] references, for use with AI coding assistants like Claude Code.',
+    description: 'A CLI context assembler intended for use with agentic development. Intended to dynamically provide agents with the minimum viable context for any given project based on a library of labled content fragments',
     url: 'https://github.com/agebhardtsbauer/organ-eyes',
     language: 'TypeScript',
     stars: 0,
   },
   {
-    name: 'kickstart.nvim',
-    description: 'Personal Neovim configuration forked from kickstart.nvim, customized for my daily development workflow.',
+    name: 'my neovim config',
+    description: 'my personalized Neovim configuration forked from kickstart.nvim.',
     url: 'https://github.com/agebhardtsbauer/kickstart.nvim',
     language: 'Lua',
     stars: 0,
