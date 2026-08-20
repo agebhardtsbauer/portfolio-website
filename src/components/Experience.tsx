@@ -1,10 +1,12 @@
 import { useFadeIn } from '../hooks/useFadeIn'
 import { SectionLabel } from './SectionLabel'
 import { Tag } from './Tag'
-import { experience } from '../data/experience'
+import { useVersionContent } from '../context/VersionContext'
+import type { ExperienceEntry } from '../types'
 
 export function Experience() {
   const headingRef = useFadeIn<HTMLDivElement>()
+  const { experience } = useVersionContent()
 
   return (
     <section
@@ -36,7 +38,7 @@ function TimelineEntry({
   entry,
   delay,
 }: {
-  entry: (typeof experience)[number]
+  entry: ExperienceEntry
   delay: number
 }) {
   const ref = useFadeIn<HTMLDivElement>(delay)

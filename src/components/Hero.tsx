@@ -1,7 +1,9 @@
 import { useFadeIn } from '../hooks/useFadeIn'
+import { useVersionContent } from '../context/VersionContext'
 
 export function Hero() {
   const ref = useFadeIn<HTMLDivElement>()
+  const { heroAccent, heroBio, resumeFile, resumeDownloadName } = useVersionContent()
 
   return (
     <section
@@ -68,8 +70,8 @@ export function Hero() {
             margin: '0 0 24px',
           }}
         >
-          Software Engineer &amp;{' '}
-          <span style={{ color: 'var(--accent2)' }}>Test Automation Specialist</span>
+          Software Developer &amp;{' '}
+          <span style={{ color: 'var(--accent2)' }}>{heroAccent}</span>
         </p>
 
         {/* Bio */}
@@ -84,7 +86,7 @@ export function Hero() {
             maxWidth: 560,
           }}
          >
-         I architect and build scaleable and robust test automation frameworks. In service of this primary goal I have built technical proficiencies across the stack; SQL data transformation pipelines, AWS services, front-end frameworks, web apis, bash scripting and CICD to name a few. I'm Currently pioneering agentic QA workflows with Playwright MCP: agents that organize test repositories, evaluate Jira tickets for readiness, and self-heal when things go wrong. I approach every problem from the developer, tester, and end-user perspective, and I care deeply about the products that I build and the people I work with.
+         {heroBio}
         </p>
 
         {/* CTAs */}
@@ -136,8 +138,8 @@ export function Hero() {
             Get in Touch
           </a>
           <a
-            href="/resume.pdf"
-            download="Resume_AlanGeb_SDET.pdf"
+            href={resumeFile}
+            download={resumeDownloadName}
             className="btn-chamfer"
             style={{
               fontFamily: "'DM Mono', monospace",

@@ -1,9 +1,11 @@
 import { useFadeIn } from '../hooks/useFadeIn'
 import { SectionLabel } from './SectionLabel'
-import { skills } from '../data/skills'
+import { useVersionContent } from '../context/VersionContext'
+import type { SkillCategory } from '../types'
 
 export function Skills() {
   const headingRef = useFadeIn<HTMLDivElement>()
+  const { skills } = useVersionContent()
 
   return (
     <section
@@ -35,7 +37,7 @@ function SkillCard({
   category,
   delay,
 }: {
-  category: (typeof skills)[number]
+  category: SkillCategory
   delay: number
 }) {
   const ref = useFadeIn<HTMLDivElement>(delay)
