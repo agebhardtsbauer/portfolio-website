@@ -42,7 +42,7 @@ export const professionalProjects: ProfessionalProject[] = [
     tags: ['Playwright', 'CLI', 'GitLab CI'],
     variants: {
       testing:
-        'A CLI-driven Playwright framework that scaffolds multi-domain test suites: asks how many domains and their slugs, generates dev/test/prod env variants, scaffolds a test-user file, and caches authenticated sessions per user on first run. Supports "common" tests that run identically everywhere vs. "targeted," domain-specific tests. Scaled to 28+ brand domains running in parallel — later generalized and open-sourced as testwright.',
+        'A CLI-driven Playwright framework that scaffolds multi-domain test suites: asks how many domains and their slugs, generates dev/test/prod env variants, scaffolds a test-user file, and caches authenticated sessions per user on first run. Supports "common" tests that run identically everywhere vs. "targeted," domain-specific tests. Scaled to 28+ brand domains running in parallel.',
       sre: 'A Playwright test-scaffolding CLI with per-domain environment generation and cached authenticated sessions, scaling parallel FE test execution across 28+ brand domains, shipped with a shared GitLab CI runner template.',
       platform:
         'A CLI scaffolding tool that generates a fully configured, multi-domain Playwright test suite — per-domain env generation, cached auth sessions — in minutes instead of hours. Scaled to 28+ brand domains, later generalized and published as testwright.',

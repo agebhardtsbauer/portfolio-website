@@ -29,7 +29,7 @@ export const resumeContent: Record<ResumeVersion, VersionContent> = {
         bullets: [
           'Architected an agentic pipeline (Playwright MCP) that converts requirements docs and legacy test cases into a deduplicated, consistently-structured test suite, generates Playwright automation, and self-heals broken tests with human review on unresolved failures',
           'Designed XP_CYTEST, a Cypress + MSW component-testing module built into the platform’s project scaffolding — adopted by 15+ teams and growing, shifting bug discovery left of e2e/deploy',
-          'Built a CLI-driven Playwright framework that scaffolds multi-domain test suites with per-domain env generation and cached auth sessions, scaling to 28+ brand domains in parallel (later open-sourced as testwright)',
+          'Built a CLI-driven Playwright framework that scaffolds multi-domain test suites with per-domain env generation and cached auth sessions, scaling to 28+ brand domains in parallel',
           'Led the migration of Cypress e2e tests from a standalone repo into application repos ("in-repo QA"), resolving chronic version-skew between test code and app code',
           'Automated a multi-system test workflow (web portal → MongoDB → Linux batch job → generated PDF) that had been dismissed as "impossible to automate," including automated visual verification via Playwright + Jest snapshot diffing — enabling dozens of concurrent test runs versus one manual run at a time',
           'Built a reversible "test scenario" system for a legacy, app-layer-free SQL stored-procedure engine, eliminating corrupted shared test data and improving failure traceability',
